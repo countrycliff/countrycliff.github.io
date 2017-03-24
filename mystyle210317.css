@@ -1,0 +1,1243 @@
+/* Responsive Page CSS */
+/* Basic */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: Georgia, sans-serif;
+	font-family: 'Lato', sans-serif; /*the google font called from the web*/	
+	font-size: 100%; /*18/16=1.125em*/
+	background-color:#f8ff9e;
+	
+	margin: auto;
+	width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Arbutus Slab', serif;/*the google font called from the web*/
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h1:before {
+  /* content: ''; */
+  
+  display: block;
+  background: lightgrey;
+}
+/*       Navbar       */
+
+#menu{
+display:none;
+}
+
+.slicknav_menu {
+	display:none;
+}
+
+#content{
+	max-width: 960px;
+	width: 100%;
+	height: 112px;
+	margin-top: 0px;
+   	background-color: #42200a; /*dark brown*/
+	border-bottom:solid 6px white;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.col1{
+width: 33.33333333333333%; /*320px*/
+background-color: #42200a;
+float: left;
+}
+
+
+.replace{  /*this rule is a class, classes can be reused, classes require a full stop*/
+	width: 226px; /*the width of our logo image */
+	height: 45px; /*the height of our logo image */
+	position: relative; /*position our logo relative to its normal position and allows us to position any children (ie the span)*/
+	margin-left: 45px;
+	padding-top: 30.5px;
+	padding-bottom: 30.5px;
+	background-color: #42200a;
+ }
+.replace span {
+  background: url(image/cclogo_226_45px.jpg); /*link to our logo image*/
+background-repeat:no-repeat;
+  position: absolute; /*absolute position element is positioned relative to the first parent element*/
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.col2{
+	width: 66.66666666666667%; /*640px*/
+	margin-top:45px;
+	background-color: #42200a; /*dark brown*/
+	float: right;
+}
+
+
+
+/*changed here 19 mar 2017*/
+.dropbtn {
+    background-color: transparent; /*remove later*/
+	color: white;
+    border: none;
+	margin-left: 10px;
+    cursor: pointer;
+	font-family: 'Lato', sans-serif; /*the google font called from the web*/	
+	font-size: 1.125em; /*18/16=1.125em*/
+}
+
+/*changed here 19 mar 2017*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+	float: left;
+	padding-left: 1px;
+}
+
+/*changed here 19 mar 2017*/
+.dropdown-content {
+	font-family: 'Lato', sans-serif; /*the google font called from the web*/	
+	font-size: 0.8125em; /*18/16=1.125em*/
+	line-height: 1.5em;
+	color: #f1f1f1;
+    display: none;
+    position: absolute;
+    background-color: #716e5e;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+/*changed here 19 mar 2017*/
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+	
+}
+
+/*changed here 19 mar 2017*/
+.dropdown-content a:hover {background-color: #33322b}
+
+/*changed here 19 mar 2017*/
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*changed here 19 mar 2017*/
+	.dropdown:hover .dropbtn {
+	color:  #f8ee63;
+}
+
+
+
+/*       Container       */
+#gallery_container{
+	width: 100%;
+	max-width: 960px;
+	height: 457px;
+	background-color: #FFFFFF;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+section#gallery_content
+{
+	width: 100%; /*width as per the slice in the design comp*/
+	margin-left:auto; /*required to center the header in the page*/
+	margin-right:auto; /*required to center the header in the page*/	
+	/* background-color:#9E8182;/*a temporary background colour to help us test*/
+	height:457px;/*height as per the design comp slice-lets be generous for now*/
+	
+	background-image: url(image/Duke_University_Gallery_bg.jpg); /*add a background image*/
+	background-position: 50%; /*background position takes two parameters X and Y- so this percentage is the X which is width, thus it keeps the image centered*/
+	background-repeat: no-repeat; /*don't repeat the background image*/
+	background-size: cover; /*scale the background image to be as large as possible so that the background area is completely covered by the background image. */
+	overflow: hidden;
+}
+
+section#about_gallery_content{
+	width: 100%; /*width as per the slice in the design comp*/
+	margin-left:auto; /*required to center the header in the page*/
+	margin-right:auto; /*required to center the header in the page*/	
+	/* background-color:#9E8182;/*a temporary background colour to help us test*/
+	height:457px;/*height as per the design comp slice-lets be generous for now*/
+	
+	background-image: url(image/About_Gallery.jpg); /*add a background image*/
+	background-position: 50%; /*background position takes two parameters X and Y- so this percentage is the X which is width, thus it keeps the image centered*/
+	background-repeat: no-repeat; /*don't repeat the background image*/
+	background-size: cover; /*scale the background image to be as large as possible so that the background area is completely covered by the background image. */
+}
+
+#left {
+	width: 35%;/*310px/960*/
+	height: 457px;
+	padding-top: 20px;
+	padding-left: 0;
+	float: left;
+}
+
+#left2{
+	display: none;
+}	
+
+#duke_content
+{
+	width:64%;
+	height:463px;
+	background-color:#FFFFFF;	
+	float: right;
+	margin-top:0px;
+	padding-top:25px;
+}
+
+#before_after_buttons_left{
+	float:left;
+	margin-top:10px;
+	padding-left: 2px;
+	}
+
+#before_after_buttons_right{
+	float: right;
+	margin-top:10px;
+	padding-right: 70px;
+
+}
+
+.Duke_University{
+	font-family: 'Arbutus Slab', serif;/*the google font called from the web*/
+	font-size: 1.3125em; /*21/16=1.3125em*/
+	letter-spacing: -0.02em; /*-10px/16*/
+	font-weight: bold;
+	text-align: left;
+	color:#33322b;
+	line-height: 1.2em;
+	padding-left: 40px;
+	margin-bottom: -5px;
+	width: 252px;
+}
+
+.col_one_p1{
+	-webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+	-webkit-column-width: 130px; /* Chrome, Safari, Opera */
+    -moz-column-width: 130px; /* Firefox */
+    column-width: 130px;
+	font-size: 0.78125em; /*12.5/16=0.78125em*/
+	font-family: 'Lato', sans-serif; /*the google font called from the web*/
+	letter-spacing: -0.01em;
+	line-height: 1.45em;
+	color: #33322b;
+	padding-top: 15px;
+	padding-left: 40px;
+	padding-right: 20px;
+	text-align:justify; /*right column text*/
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 4px 4px 4px 4px;
+}
+
+.column2{
+float: left;
+width:20%;
+height: 50px;
+}	
+	
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 30%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  width: 450px;/*52.08333333333333%*/
+  height: 400px;
+  margin-left:-250px;
+  margin-right:-250px;
+  top:20%;
+  left: 50%;
+  z-index: 1;
+  background-color: #f8ff9e;
+  box-shadow: 0px 4px 4px 0px black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 50px;
+	width: 430px;
+	height: 250px;
+	
+}
+
+/* The Close Button */
+.close {
+  color: #42200a ;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin: auto;
+  color: white;
+  font-family: lato;	font-family: 'Lato', sans-serif; /*the google font called from the web*/
+  font-weight: bold;
+  font-size: 1.5em;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 11.5%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: #f8ff9e;
+  color: #33322b;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+	font-family: 'Lato', sans-serif; /*the google font called from the web*/
+	color: #42200a;
+	font-size: 0.7em;
+	position: absolute;
+	top: 5%;
+}
+
+img {
+  margin-bottom: -4px;
+ }
+
+.caption-container {
+	font-family: lato;	font-family: 'Lato', sans-serif; /*the google font called from the web*/
+	font-size: .7em;
+  text-align: center;
+  background-color: #f8ff9e;
+  padding: 8px 16px;
+  color: #33322b;
+}
+
+.demo {
+  opacity: 0.6;
+  padding-right: 10px;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+/* end of lightbox testing phase*/
+
+#right{
+	height:457px; /*457px height as per the design comp slice*/
+	width:66.66666666666667%;/*640px/960x100 640px 2 out of 3 parts of the desktop width*/
+	padding-top: 200px;
+	text-align:center; /*center all the text in the div center:aligned*/
+	float:right; /*float the div to the right of the page*/
+}
+
+
+#right_2{
+	height:457px; /*457px height as per the design comp slice*/
+	width:66.66666666666667%;/*640px/960x100 640px 2 out of 3 parts of the desktop width*/
+	text-align:center; /*center all the text in the div center:aligned*/
+	padding-left:15px;
+	padding-right:40px;
+	padding-top: 50px;
+	float:right; /*float the div to the right of the page*/
+}
+
+.About_CountryCliff{
+	font-family: 'Arbutus Slab', serif;/*the google font called from the web*/
+	font-size: 1.3125em; /*21/16=1.3125em*/
+	letter-spacing: 0px; /*30px / 16=1.875em*/
+	font-weight: bold;
+	color:#33322b;
+	line-height: 0.5em;
+}
+
+.col_two_p1{
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+	-webkit-column-width: 65px; /* Chrome, Safari, Opera */
+    -moz-column-width: 65px; /* Firefox */
+    column-width: 65px;
+	-webkit-column-gap: 20px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 20px; /* Firefox */
+    column-gap: 20px;
+	font-size: 0.78125em; /*12.5/16=0.78125em*/
+	font-family: 'Lato', sans-serif; /*the google font called from the web*/
+	letter-spacing: 0em;
+	line-height: 1.5em;
+	color: #33322b;
+	padding-top: 20px;
+	text-align:justify; /*right column text*/
+}
+
+
+#div2 {
+    width: 164.25px;
+	height:59.25px;
+	padding-top:8px;
+	border:4px solid #42200a;
+	margin-top: 25px;
+	margin-left: 192.875px;
+	box-shadow: 2px 2px 2px #a25311;
+	box-sizing: border-box
+}
+
+
+#div2 a{
+	font-size: 0.86859375em; /*18.53/16=1.158125em*/
+	font-family: 'Lato', sans-serif; /*the google font called from the web*/
+	font-weight: bold;
+	letter-spacing: 0em;
+	line-height: .9em;
+	text-align: center;
+	color:#42200a; 
+	text-decoration: none; /*remove list link styling*/
+	text-shadow: 0px 3px 3px 0px black;
+	}
+
+#div2 a:hover{
+	color: #a25311 ;/*on mouse over make the text change colour*/
+	}
+
+
+#div1 {
+    width: 219px;/*219px/960*100*/
+	height:79px;
+	padding:10px;
+	border:4px solid #f8ee63;
+	margin-left: 203px;
+	margin-top: 90px;
+	box-sizing: border-box;
+	box-shadow: 2px 2px 2px #000000;
+}
+
+#div1 a{
+	font-size: 1em; /*18.53/16=1.158125em*/
+	font-family: 'Lato', sans-serif; /*the google font called from the web*/
+	font-weight: bold;
+	letter-spacing: 0.075em;
+	line-height: 1.3em;
+	text-align:justify;
+	color:#f8ee63; 
+	text-decoration: none; /*remove list link styling*/
+	}
+
+#div1 a:hover{
+	color: #f8ff9e;/*on mouse over make the text change colour*/
+	}
+
+.Exclusive_Beautiful 
+{
+	font-family: 'Arbutus Slab', serif;/*the google font called from the web*/
+	font-size: 3.5em; /*55.4/16=3.4em*/
+	letter-spacing: -1px; /*30px / 16=1.875em*/
+	color:#f8ee63;
+	text-shadow: 4px 4px 4px #000000;
+	line-height: 0.5em;
+	padding-left:15px;
+}
+
+.subhead 
+{
+	font-family: 'Lato', sans-serif; /*the google font called from the web*/	
+	font-size: 1.875em; /*30/16=1.875em*/
+	letter-spacing: 1.1px;
+	padding-top:12px;
+	color:#f8ee63;
+	text-shadow: 3px 3px 3px black;
+	padding-left:15px;
+}
+
+#footer_container
+{
+	max-width: 960px;
+	width: 100%;
+	height: 81px;
+	background-color: #FFFFFF;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+footer{  /*footer is a native HTML5 element so does not need a hashtag*/
+	
+	max-width: 960px; /*width as per the slice in the design comp*/
+	width: 100%;
+	height: 81px;
+	margin-left:auto; /*required to center the header in the page*/
+	margin-right:auto; /*required to center the header in the page*/	
+	background-color: #42200a; /*a temporary background colour to help us test*/
+}
+
+#footer_left
+{
+	height:81px; /*81px height as per the design comp slice*/
+	/*width:26.04166666666667%;*/ /*250px 2 out of 3 parts of the desktop width*/
+	padding-top: 15px;
+	padding-bottom: 18px;
+	padding-left:41px;
+	text-align:left; /*center all the text in the div center:aligned*/
+	float:left; /*float the div to the rightof the page- more info here*/
+	background-color: #42200a;/*a temporary background colour to help us test*/
+	box-sizing: border-box;
+	position: absolute;
+}
+
+.two 
+{
+	margin-left: auto;
+	margin-right: auto;
+	margin-right: 30px; /*30px*/
+	text-decoration: none; /*remove list link styling*/
+	display:inline; /* menu to display horizontally*/
+	
+}
+
+.footer_address 
+{
+	font-size: 0.58em;/*9/16=0.5625em*/
+	font-family: 'Lato', sans-serif; /*the google font called from the web*/
+	text-align: left;
+	color: white;
+	margin-top: 3px;
+	line-height:1.2em;
+}
+
+#footer_right
+{
+	max-width: 710px;
+	width:73.95833333333333%; /*710px of the desktop width*/
+	height: 81px;
+	margin-left:250px;
+	padding-top: 25px;
+	padding-bottom: 18px;
+	text-align:right; /*center all the text in the div center:aligned*/
+	float:right; /*float the div to the rightof the page- more info here*/
+	background-color: #42200a;/*a temporary background colour to help us test*/
+	box-sizing: border-box;
+	position:absolute;
+}
+
+
+#copyright{
+	margin-top: 15px;
+	
+}
+
+#copyright li{
+	margin-right: 4px; /*add a 3 px space between the list items to line up all the terms*/
+	display:inline; /* menu to display horizontally*/
+	font-size: 0.58em;/*9/16=0.5625em*/
+	font-family: 'Lato', sans-serif; /*the google font called from the web*/
+	color:#ffffff;
+}
+
+#copyright li a{
+	text-decoration: none; /*remove list link styling*/
+	color: #ffffff; /*make the text white*/
+	}
+
+#copyright li a:hover{
+	color: #f8ee63;/*on mouse over make the text blue*/
+	}
+
+#copyright li:nth-child(5) { /*give the 6 child of the UL- our last li element a margin to move it away from the edge we could also use #menu li:last-child--http://www.w3schools.com/cssref/sel_nth-child.asp */
+   	margin-right:50px; 
+}
+
+
+
+
+
+
+/*   Media Screen 850 CSS   */
+@media all and (max-width: 850px) {
+
+	#content{
+		height: auto;
+	}
+
+
+	.col1 {
+		float: none;
+		Clear: left;
+		Width: 100%;
+	}
+	
+	.col2 {
+	Float: none;	/*stop float from working*/
+	Clear: right;	/*clear the previous float so that this column sits under col1*/
+	Width: 100%;	/*make col2 fill up the parent width*/
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 15px;
+	background-color: #42200a;
+	text-align: center;
+	}
+	
+	.replace {  /*this rule is a class, classes can be reused, classes require a full stop*/
+	margin: auto;
+	padding-top: 30.5px;
+	padding-bottom: 30.5px;
+	background-color: #42200a;
+	}
+	
+	.dropdown {
+    position: relative;
+    display: inline-block;
+	float: none;
+	clear: left;
+	text-align: left;
+	}
+	
+	.dropbtn {
+    background-color: transparent; /*remove later*/
+	color: white;
+    border: none;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left:15px;
+	padding-right:15px;
+    cursor: pointer;
+	font-family: 'Lato', sans-serif; /*the google font called from the web*/	
+	font-size: 1.3em; /*20.9/16=1.30875em*/
+}
+
+	#gallery_container{
+	width: 100%;
+	height: 727px;
+	background-color: #FFFFFF;
+	margin-left: auto;
+	margin-right: auto;
+}
+	
+
+	section#gallery_content{
+	width: 100%; /*width as per the slice in the design comp*/
+	margin-left:auto; /*required to center the header in the page*/
+	margin-right:auto; /*required to center the header in the page*/	
+	/* background-color:#9E8182;/*a temporary background colour to help us test*/
+	height:727px;/*height as per the design comp slice-lets be generous for now*/
+	
+	background-image: url(image/Duke_University_753px_bg.jpg); /*add a background image*/
+	background-position: 50%; /*background position takes two parameters X and Y- so this percentage is the X which is width, thus it keeps the image centered*/
+	background-repeat: no-repeat; /*don't repeat the background image*/
+	background-size: cover; /*scale the background image to be as large as possible so that the background area is completely covered by the background image. */
+	}
+
+	
+	
+	.Exclusive_Beautiful {
+	font-size: 4.515625em; /*72.25 pt/16=4.515625*/
+	line-height: 0.9em;
+	margin: auto;
+	margin-top: 50px;
+	
+}	
+
+	.subhead{
+	line-height: 1.2em;
+	font-size: 2.2em; /*37.8pt/16*/
+	letter-spacing: 1px;
+	text-align: center;
+	width: 350px;
+	margin: auto;
+	margin-top: -10px;
+}		
+
+	
+	#div1 {
+    width: 280px;
+	height:100px;
+	border:4px solid #f8ee63;
+	margin-left: auto;
+	margin-right: auto;
+	margin-right: 120px;
+	margin-top: 150px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+	#div1 a{
+	font-size: 1.46625em; /*23.46 pt/16*/
+	font-family: 'Lato', sans-serif; /*the google font called from the web*/
+	font-weight: bold;
+	letter-spacing: 0em;
+	line-height: 1.2em;
+	color:#f8ee63; 
+	text-decoration: none; /*remove list link styling*/
+}
+	
+/*about*/
+	section#about_gallery_content{
+	width: 100%; /*width as per the slice in the design comp*/
+	margin-left:auto; /*required to center the header in the page*/
+	margin-right:auto; /*required to center the header in the page*/	
+	/* background-color:#9E8182;/*a temporary background colour to help us test*/
+	height:727px;/*height as per the design comp slice-lets be generous for now*/
+	
+	background-image: url(image/About_Gallery_753px.jpg); /*add a background image*/
+	background-position: 50%; /*background position takes two parameters X and Y- so this percentage is the X which is width, thus it keeps the image centered*/
+	background-repeat: no-repeat; /*don't repeat the background image*/
+	background-size: cover; /*scale the background image to be as large as possible so that the background area is completely covered by the background image. */
+}
+
+	#right_2{
+	height:727px; /*457px height as per the design comp slice*/
+	width:100%;/*640px/960x100 640px 2 out of 3 parts of the desktop width*/
+	margin-left: auto;
+	margin-right:auto;
+	text-align:center; /*center all the text in the div center:aligned*/
+	padding-top: 212px;
+	float: none;
+	clear:right; /*float the div to the right of the page*/
+}
+	
+	.About_CountryCliff{
+	font-size: 1.75em; /*28/16=1.75em*/
+	letter-spacing: 0px; /*30px / 16=1.875em*/
+	font-weight: bold;
+	color:#33322b;
+	line-height: 0.5em;
+}
+
+	.col_two_p1{
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+	-webkit-column-width: 60px; /* Chrome, Safari, Opera */
+    -moz-column-width: 50px; /* Firefox */
+    column-width: 60px;
+	-webkit-column-gap: 30px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 30px; /* Firefox */
+    column-gap: 30px;
+	font-size: 1em; /*18/16=1.125em*/
+	padding-top: 20px;
+	padding-left: 20px;
+	text-align:justify; /*right column text*/
+}
+	
+	#div2 {
+    width: 190px;
+	height:75px;
+	padding-top:12px;
+	border:4px solid #42200a;
+	margin-left:auto;
+	margin-right:auto;
+	box-shadow: 2px 2px 2px 2px #a25311;
+	box-sizing: border-box
+}
+
+
+	#div2 a{
+	font-size: 0.86859375em; /*18.53/16=1.158125em*/
+	font-family: 'Lato', sans-serif; /*the google font called from the web*/
+	font-weight: bold;
+	letter-spacing: 0em;
+	line-height: .9em;
+	text-align: center;
+	color:#42200a; 
+	text-decoration: none; /*remove list link styling*/
+	}
+
+	
+	
+	
+	#footer_left {
+	height:81px; /*81px height as per the design comp slice*/
+	padding-top: 15px;
+	padding-bottom: 18px;
+	padding-left:50px;
+	}
+	
+	#footer_right{
+	width: 70%;	
+	padding-right: 10px;
+	}	
+
+
+/*Duke university*/
+	
+	#left {
+	width: 100%;/*753px*/
+	height: auto;
+	padding-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	float: none;
+	clear: left;
+	}
+	
+	#duke_content
+{
+	width:100%;
+	height:477px;
+	background-color:#FFFFFF;	
+	float: none;
+	clear: right;
+	margin-top:10px;
+	padding-top:0px;
+	padding-left: 100px;
+	padding-right: 40px;
+	}
+	
+
+
+.Duke_University{
+	font-size: 1.5em; /*24/16=1.5em*/
+	letter-spacing: -0.02em; /*-10px/16*/
+	font-weight: bold;
+	text-align: center;
+	color:#33322b;
+	line-height: 1.2em;
+	padding-left: 104px;
+	padding-right: 104px;
+	margin-bottom: 0px;
+	width: 753px;
+}
+
+.col_one_p1{
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+	-webkit-column-width: 100px; /* Chrome, Safari, Opera */
+    -moz-column-width: 100px; /* Firefox */
+    column-width: 100px;
+	-webkit-column-gap: 30px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 30px; /* Firefox */
+    column-gap: 30px;
+	font-size: 0.78125em; /*12.5/16=0.78125em*/
+	font-family: 'Lato', sans-serif; /*the google font called from the web*/
+	letter-spacing: -0.01em;
+	line-height: 1.45em;
+	color: #33322b;
+	padding-top: 15px;
+	padding-left: 104px;
+	padding-right: 104px;
+	text-align:justify; /*right column text*/
+}
+
+
+	
+}/*end of 850px media query*/
+
+
+
+/*   Media Screen 400px CSS   */
+@media all and (max-width: 570px) {
+	
+	#content{
+		height: auto;
+	}
+	
+	
+	.dropbtn{
+		display: none;
+	}	
+	
+	.replace {  /*this rule is a class, classes can be reused, classes require a full stop*/
+	margin: auto;
+	padding-top: 30.5px;
+	padding-bottom: 0px;
+	background-color: #42200a;
+ }
+	
+	js .slicknav_menu {
+		display:block;
+	}
+
+	
+	#gallery_container{
+	height: auto;
+	
+	}	
+	
+	section#gallery_content{
+	width: 100%; /*width as per the slice in the design comp*/
+	margin-left:auto; /*required to center the header in the page*/
+	margin-right:auto; /*required to center the header in the page*/	
+	/* background-color:#9E8182;/*a temporary background colour to help us test*/
+	height:370px;/*height as per the design comp slice-lets be generous for now*/
+	
+	background-image: url(image/Duke_University_320px_bg.jpg); /*add a background image*/
+	background-position: 50%; /*background position takes two parameters X and Y- so this percentage is the X which is width, thus it keeps the image centered*/
+	background-repeat: no-repeat; /*don't repeat the background image*/
+	background-size: cover; /*scale the background image to be as large as possible so that the background area is completely covered by the background image. */
+	}
+
+	#right{
+	width: 100%;
+	height: 370px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	
+	.Exclusive_Beautiful {
+	font-size: 4em; /*50.34 pt/16*/
+	text-align: center;
+	margin-top: -150px;
+	line-height: 1em;
+}	
+
+	.subhead{
+	line-height: 1em;
+	font-size: 1.8em; /*23.41pt/16=1.463125em*/
+	letter-spacing: 1.8px;
+	text-align: center;
+	width: 290px;
+	text-shadow: 3px 3px 3px #000000;
+}	
+	/*206x73*/
+	#div1 {
+    width: 206px;
+	height:73px;
+	border:4px solid #f8ee63;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+	#div1 a{
+	font-size: 1.073125em; /*17.17 pt pt/16=1.073125*/
+	font-family: 'Lato', sans-serif; /*the google font called from the web*/
+	font-weight: bold;
+	letter-spacing: 0em;
+	line-height: 1.2em;
+	color:#f8ee63; 
+	text-decoration: none; /*remove list link styling*/
+}
+		
+		
+	/*about*/
+	section#about_gallery_content{
+	width: 100%; /*width as per the slice in the design comp*/
+	margin-left:auto; /*required to center the header in the page*/
+	margin-right:auto; /*required to center the header in the page*/	
+	/* background-color:#9E8182;/*a temporary background colour to help us test*/
+	height:942px;/*height as per the design comp slice-lets be generous for now*/
+	
+	background-image: url(image/About_Gallery_320px.jpg); /*add a background image*/
+	background-position: 50%; /*background position takes two parameters X and Y- so this percentage is the X which is width, thus it keeps the image centered*/
+	background-repeat: no-repeat; /*don't repeat the background image*/
+	background-size: cover; /*scale the background image to be as large as possible so that the background area is completely covered by the background image. */
+}
+	
+	.About_CountryCliff{
+	font-size: 1.25em; /*20/16=1.25em*/
+	letter-spacing: 0px; /*30px / 16=1.875em*/
+	font-weight: bold;
+	color:#33322b;
+	line-height: 0.5em;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 16px;
+}
+
+	.col_two_p1{
+	-webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+	-webkit-column-width: 110px; /* Chrome, Safari, Opera */
+    -moz-column-width: 110px; /* Firefox */
+    column-width: 110px;
+	font-size: 0.78125em; /*12.5/16=0.78125em*/
+	padding-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align:justify; /*right column text*/
+}
+
+	#div2 {
+    width: 190px;
+	height:75px;
+	padding-top:15px;
+	border:4px solid #42200a;
+	margin-left:auto;
+	margin-right:auto;
+	margin-left: 50px;
+	margin-right: 20px;
+	box-shadow: 2px 2px 2px #a25311;
+	box-sizing: border-box
+}
+
+
+	#div2 a{
+	font-size: 0.86859375em; /*18.53/16=1.158125em*/
+	font-family: 'Lato', sans-serif; /*the google font called from the web*/
+	font-weight: bold;
+	letter-spacing: 0em;
+	line-height: .9em;
+	text-align: center;
+	color:#42200a; 
+	text-decoration: none; /*remove list link styling*/
+
+	}
+
+	
+	
+	#footer_container{
+			height: 115px;
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 10px;
+	
+	}	
+	
+	
+	#footer_left {
+		float:none;
+		clear: left;
+		width: 100%;
+		height: 110px;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		}	
+
+	.two{
+	width: 100%;	
+	margin-left: 20px;
+	margin-right: 15px;
+	
+	}
+		
+	.footer_address {
+	width: 83%;	
+	font-size: 0.7em;/*9/16=0.5625em*/
+	font-family: 'Lato', sans-serif; /*the google font called from the web*/
+	text-align: center;
+	color: white;
+	padding-top:5px;
+	line-height:1em;
+}
+	
+
+	#footer_right{
+		float:none;
+		clear: right;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: -25px;
+		position: relative;
+		padding:0;
+		height: 15px;
+	}	
+	
+	#copyright{
+	padding-bottom: 0;
+	margin-top: -20px;
+}
+
+	#copyright li{
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 0.6em;/*9/16=0.5625em*/
+	font-family: 'Lato', sans-serif; /*the google font called from the web*/
+
+	}
+	
+	#copyright li:nth-child(5) { /*give the 6 child of the UL- our last li element a margin to move it away from the edge we could also use #menu li:last-child--http://www.w3schools.com/cssref/sel_nth-child.asp */
+   	margin-right: 15px; 
+	}
+
+	/*duke mobile*/
+
+#left {
+	width: 320px;/*753px*/
+	height: auto;
+	padding-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	float: none;
+	clear: left;
+	text-align: center;
+	}
+	
+	.Duke_University{
+	font-size: 1.5em; /*24/16=1.5em*/
+	letter-spacing: -0.02em; /*-10px/16*/
+	font-weight: bold;
+	text-align: center;
+	color:#33322b;
+	line-height: 1.2em;
+	padding-left: 5px;
+	padding-right: 12px;
+	margin-left: auto;
+	margin-left: auto;
+	margin-bottom: 0px;
+	width: 320px;
+}
+	
+.col_one_p1{
+	-webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+	-webkit-column-width: 100px; /* Chrome, Safari, Opera */
+    -moz-column-width: 100px; /* Firefox */
+    column-width: 100px;
+	font-size: 0.7em; /*12.5/16=0.78125em*/
+	letter-spacing: -0.01em;
+	line-height: 1.45em;
+	color: #33322b;
+	padding-left: 30px;
+	padding-right: 38px;
+`	margin-right: auto;
+	margin-left: auto;
+	text-align:justify;
+}
+
+#duke_content
+{
+	width:320px;
+	height:262px;
+	background-color:#FFFFFF;	
+	float: none;
+	clear: right;
+	padding-left: 30px;
+	padding-right: 8px;
+	margin: auto;
+	margin-top:0px;
+	padding-top:25px;
+}
+
+.row > .column {
+	  padding: 4px 2px 4px 2px;
+}
+
+.column {
+		display: inline;
+  width: 30%;
+  margin-left:0px;
+  margin-right: auto;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  width: 320px;/*52.08333333333333%*/
+  height: 320px; 
+  top:15%;
+  bottom: 50%;
+  left: 78%;
+  z-index: 1;
+}
+
+/* Modal Content */
+.modal-content {
+	position: relative;
+	margin: auto;
+	padding: 40px;
+	width: 320px;
+	height: 250px;
+}
+
+
+#before_after_buttons_left{
+	float:left;
+	margin-top:10px;
+	padding-left: 2px;
+	}
+
+#before_after_buttons_right{
+	float: right;
+	margin-top:10px;
+	padding-right: 30px;
+}
+
+
+}/*end of 753px media query*/

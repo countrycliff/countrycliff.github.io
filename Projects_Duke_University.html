@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Projects: Duke University</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	
+	<link rel="stylesheet" type="text/css" href="mystyle210317.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Arbutus+Slab" rel="stylesheet">  
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="slicknav.css">
+<link rel="stylesheet" type="text/css" href="dist/imagelightbox.css">
+<!--this css file covers the lightbox itself copy and paste the imagelightbox.css file into yoour folder-->
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+<script src="modal_lightbox.js"></script>
+
+</head>
+<body>
+
+<ul id="menu">
+    <li>about
+        <ul>
+            <li><a href="about.html">about countrycliff</a></li>
+         </ul>
+    </li>
+	
+    <li><a href="Projects_Duke_University.html">Our Projects</a>
+        <ul>
+            <li><a href="#">Native Nowhere Gardens</a></li>
+            <li><a href="Projects_Duke_University.html">Duke University, Nowhere</a></li>
+            <li><a href="#">Queens Park</a></li>
+        </ul>
+    </li>
+	
+	<li><a href="#">Our Services</a>
+        <ul>
+            <li><a href="#">Garden Construction</a></li>
+            <li><a href="#">Garden Maintenance</a></li>
+            <li><a href="#">Garden Design</a></li>
+        </ul>
+    </li>
+	
+	<li><a href="#">Our Team</a>
+        <ul>
+            <li><a href="#">Founder</a></li>
+            <li><a href="#">Landscape Architecture Staff</a></li>
+            <li><a href="#">Administrative Staff</a></li>
+        </ul>
+    </li>
+	
+	<li><a href="#">Contact Us</a>
+        <ul>
+            <li><a href="#">Our Address</a></li>
+            <li><a href="#">Contact Numbers</a></li>
+            <li><a href="#">Social Media</a></li>
+        </ul>
+    </li>
+</ul><!-- end of ul menu -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="jquery.slicknav.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#menu').slicknav();
+});
+</script>
+
+
+
+<div id="content">
+
+<div class="col1">
+<h1 class="replace">
+    <a href="index.html"><span></span> 
+    countrycliff</a></h1>
+</div><!-- col1 -->
+
+<div class="col2">
+       
+ <div class="dropdown">
+<button class="dropbtn">About</button>
+<div class="dropdown-content">
+		<a href="about.html">About CountryCliff</a>
+		</div>	
+</div>
+
+<div class="dropdown">
+<button class="dropbtn">Our Projects</button>
+		<div class="dropdown-content">
+		<a href="#">Native Nowhere Gardens</a>
+		<a href="Projects_Duke_University.html">Duke University, Nowhere</a>
+		<a href="#">Queens Park</a>
+	 	</div>	
+</div>
+
+<div class="dropdown">
+<button class="dropbtn">Our Services</button>
+		<div class="dropdown-content">
+		<a href="#">Garden Contruction</a>
+		<a href="#">Garden Maintenance</a>
+		<a href="#">Garden Design</a>
+	 	</div>	
+</div>
+
+<div class="dropdown">
+<button class="dropbtn">Our Team</button>
+		<div class="dropdown-content">
+		<a href="#">Founder</a>
+		<a href="#">Landscape Architecture Staff</a>
+		<a href="#">Adminstrative Staff</a>
+	 	</div>	
+</div>
+
+<div class="dropdown">
+<button class="dropbtn">Contact Us</button>
+		<div class="dropdown-content">
+		<a href="#">Our Address</a>
+		<a href="#">Contact Numbers</a>
+		<a href="#">Social Media</a>
+	 	</div>	
+</div>
+</div><!-- col2 -->
+
+
+</div><!-- content-->
+<div id="gallery_container">
+	
+<div id="left">
+
+	<h2 class="Duke_University">
+	DUKE UNIVERSITY, NOWHERE
+	</h2>
+	<p class="col_one_p1">Duke Gardens provides a place where people of all backgrounds and ages come for beauty, education, horticulture, solitude, discovery, study, renewal and inspiration. Often spoken of as "the crown jewel of Duke University," Duke Gardens a large area right next to Duke University Medical Center. It is recognised as one of the premier public gardens in Nowhere, renowned both for landscape design and the quality of horticulture.</p>
+	
+	<p class="col_one_p1">Over 40,000 indigenous trees have been planted from collected seeds within the property to maintain its distinctive genes, compared to imports of other eucalypts. Having the seedlings mature demanded persistence as they were fragile. This improved water run-off, stabilised creek banks, arrested erosion and silt loss, increased ecological and aesthetic values.
+	</p>&nbsp;
+</div>
+
+<div id="duke_content">
+
+
+<!--Start of modal lightbox -->
+<div class="row">
+  <div class="column">
+    <img src="image/Duke006_DT_Thumb.jpg" alt="duke university 001"  style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="image/Duke002_DT_thumb.jpg" alt="duke university 002" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="image/Duke003_DT_Thumb.jpg" alt="duke university 003" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="image/Duke004_DT_thumb.jpg" alt="duke university 004" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+   <div class="column">
+    <img src="image/Duke005_DT_Thumb.jpg"
+    alt="duke university 005" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+	</div>
+</div>
+
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 5</div>
+      <img src="image/Duke006.jpg" alt="duke university 001" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 5</div>
+      <img src="image/Duke002.jpg"
+      alt="duke university 002" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 5</div>
+      <img src="image/Duke003.jpg" alt="duke university 003" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 5</div>
+      <img src="image/Duke004.jpg" alt="duke university 004" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">5 / 5</div>
+      <img src="image/Duke005.jpg" alt="duke university 005" style="width:100%">
+    </div>
+    
+   
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+   <div class="column2">
+      <img class="demo cursor" src="image/Duke006.jpg" style="width:100%"
+	  onclick="currentSlide(1)" alt="duke university 001">
+    </div>
+    <div class="column2">
+      <img class="demo cursor" src="image/Duke002.jpg" style="width:100%"
+	  onclick="currentSlide(2)" alt="duke university 002">
+    </div>
+    <div class="column2">
+      <img class="demo cursor" src="image/Duke003.jpg" style="width:100%"
+	  onclick="currentSlide(3)" alt="duke university 003">
+    </div>
+    <div class="column2">
+      <img class="demo cursor" src="image/Duke004.jpg" style="width:100%"
+	  onclick="currentSlide(4)" alt="duke university 004">
+    </div>	
+	 <div class="column2">
+      <img class="demo cursor" src="image/Duke005.jpg" style="width:100%"
+	  onclick="currentSlide(4)" alt="duke university 005">
+    </div>	
+	 	
+  </div>
+</div>
+
+<!--buttons to navigate previous and next page-->
+<div id="before_after_buttons_left">
+	<a href="#"> <img src="image/arrow_left_13px.jpg" alt="Native Gardens"></a></div>
+<div id="before_after_buttons_right">
+	<a href="#"><img src="image/arrow_right_13px.jpg" alt="Queens Park"></a></div>
+
+
+
+</div><!--duke_content-->
+
+</div><!-- gallery_container -->
+
+
+<div id="footer_container">
+
+<footer>
+
+<div id="footer_left">
+	<!--An image that is a link:-->
+	<a class="two" href="tel:+61269396100">
+	<img src="image/phone_icon.jpg" alt="+61 2 6939 6100">
+	</a>
+
+	<a class="two" href="mailto:countryclifflandscapes@hotmail.com">
+	<img src="image/mail_icon.jpg" alt="CountryClifflandscapes@hotmail.com">
+	</a>
+
+	<a class="two" href="#">
+	<img src="image/fb_icon.jpg" alt="Countrycliff Facebook">
+	</a>
+		
+	<a class="two" href="#">
+	<img src="image/Ig_icon.jpg" alt="Countrycliff Instagram">
+	</a>
+	
+	<h3 class="footer_address">CountryCliff</h3>
+	<p class="footer_address">Level 1, 265 Pittwater Road Nowhere 2100</p>
+	
+</div><!-- footer_left -->
+
+
+<div id="footer_right">
+<ul id="copyright">
+	<li>Copyright 2017</li>
+	<li>CountryCliff</li> 
+	<li><a href="#">Terms of use</a></li> 
+	<li><a href="#">Privacy policy</a></li> 
+	<li><a href="#">Accesibility</a></li>
+</ul>
+</div><!-- footer_right -->
+
+</footer>
+</div><!-- footer_container -->
+
+
+
+
+</body>
+</html>
